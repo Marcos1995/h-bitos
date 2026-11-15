@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hábitos con evidencia</title>
+  <meta name="description" content="Sueño, ejercicio, nutrición y salud mental según guías y estudios, en lenguaje llano.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,450;6..72,560&family=Source+Sans+3:wght@400;560;650&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3efe7;
+      --paper: #faf8f4;
+      --ink: #1c1915;
+      --muted: #5a5348;
+      --line: #ddd4c6;
+      --accent: #2c4a6e;
+      --focus: #9a4d24;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141311;
+        --paper: #1c1a17;
+        --ink: #f4efe6;
+        --muted: #c4b8a6;
+        --line: #3a342c;
+        --accent: #9eb6d4;
+        --focus: #e0a070;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Source Sans 3", "Segoe UI", sans-serif;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+    .wrap { width: min(40rem, calc(100% - 2.5rem)); margin-inline: auto; }
+    header { padding: 4.5rem 0 2rem; }
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-family: Newsreader, Georgia, serif;
+      font-weight: 450;
+      font-size: clamp(2.6rem, 7vw, 4.2rem);
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+    }
+    .lede { margin: 1.25rem 0 0; max-width: 36rem; font-size: 1.2rem; }
+    nav { margin-top: 2rem; }
+    nav ol { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; margin: 0; padding: 0; list-style: none; }
+    nav a { font-weight: 560; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { padding-bottom: 4rem; }
+    article {
+      padding: 2.4rem 0;
+      border-top: 1px solid var(--line);
+    }
+    .num {
+      margin: 0;
+      color: var(--accent);
+      font-family: Newsreader, Georgia, serif;
+      font-size: 1.35rem;
+    }
+    h2 {
+      margin: 0.2rem 0 0.8rem;
+      font-family: Newsreader, Georgia, serif;
+      font-weight: 560;
+      font-size: clamp(1.7rem, 4vw, 2.15rem);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    h3 {
+      margin: 1.4rem 0 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    ul { margin: 0.3rem 0 0; padding-left: 1.15rem; }
+    li + li { margin-top: 0.35rem; }
+    .why { margin: 0.3rem 0 0; }
+    footer {
+      padding: 2rem 0 4rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    footer h2 {
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    footer ol { padding-left: 1.15rem; }
+    footer li { margin-top: 0.45rem; }
+    .note { margin-top: 1.5rem; }
+    @media (max-width: 420px) {
+      header { padding-top: 2.8rem; }
+      .wrap { width: min(40rem, calc(100% - 1.75rem)); }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <p class="eyebrow">Guías y estudios</p>
+    <h1>Hábitos que se repiten</h1>
+    <p class="lede">Cuatro costumbres con respaldo, escritas para entenderlas. Cada una dice qué hacer y por qué. Vale para adultos sanos. No sustituye a un médico.</p>
+    <nav aria-label="Secciones">
+      <ol>
+        <li><a href="#sueno">Sueño</a></li>
+        <li><a href="#ejercicio">Ejercicio</a></li>
+        <li><a href="#comida">Comida</a></li>
+        <li><a href="#animo">Ánimo</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main class="wrap">
+    <article id="sueno">
+      <p class="num">01</p>
+      <h2>Dormir siete horas o más, a horas parecidas</h2>
+      <h3>Qué hacer</h3>
+      <ul>
+        <li>Dormir 7 horas o más casi todas las noches. No hay una cifra mágica de 8: el umbral con consenso es 7 o más. Muchas personas quedan entre 7 y 9.</li>
+        <li>Acostarse y levantarse a horas parecidas. El sueño sano pide duración, calidad, momento del día y regularidad, no solo un total.</li>
+        <li>Si de forma habitual se duerme más de 9 horas sin una causa clara (juventud, recuperar deuda de sueño o una enfermedad), conviene comentarlo con un profesional.</li>
+      </ul>
+      <h3>Por qué</h3>
+      <p class="why">Un panel de la American Academy of Sleep Medicine y la Sleep Research Society revisó la evidencia y acordó, para adultos de 18 a 60 años, dormir 7 horas o más de forma regular. Dormir menos de 7 se asocia con más peso, diabetes, hipertensión, enfermedad cardiaca, ictus, depresión, peor inmunidad, más dolor, más errores y más accidentes. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4434546/">Watson y cols., Sleep, 2015</a>.</p>
+    </article>
+    <article id="ejercicio">
+      <p class="num">02</p>
+      <h2>Moverse cada semana, y fortalecer el cuerpo</h2>
+      <h3>Qué hacer</h3>
+      <ul>
+        <li>150 a 300 minutos por semana de actividad moderada (caminar rápido, bici suave) o 75 a 150 minutos de actividad intensa, o una mezcla.</li>
+        <li>Dos días o más de fuerza que trabaje los grandes grupos musculares: piernas, espalda, pecho, hombros y abdomen.</li>
+        <li>Cualquier rato cuenta. Algo es mejor que nada. Conviene también pasar menos tiempo sentado.</li>
+      </ul>
+      <h3>Por qué</h3>
+      <p class="why">La guía de la OMS de 2020, hecha a partir de revisiones sistemáticas, recomienda ese volumen a los adultos de 18 a 64 años. Dentro de ese rango aparecen beneficios para la mortalidad, el corazón y otras enfermedades. Por debajo también hay beneficio: por eso «algo es mejor que nada». <a href="https://bjsm.bmj.com/content/54/24/1451">Bull y cols., British Journal of Sports Medicine, 2020</a>. Resumen de la OMS: <a href="https://www.who.int/news/item/25-11-2020-every-move-counts-towards-better-health-says-who">cada movimiento cuenta</a>.</p>
+    </article>
+    <article id="comida">
+      <p class="num">03</p>
+      <h2>Comer variado y poco procesado</h2>
+      <h3>Qué hacer</h3>
+      <ul>
+        <li>Basar las comidas en verdura, fruta, legumbres, cereales integrales, frutos secos y una proteína sencilla (pescado, huevo, carne sin rebozar). Al menos 400 g de fruta y verdura al día.</li>
+        <li>Beber agua. Dejar el azúcar libre por debajo del 10 % de la energía del día (mejor cerca del 5 %): refrescos, zumos y dulces cuentan. Menos de 5 g de sal al día.</li>
+        <li>Poca grasa saturada (menos del 10 %) y casi nada de grasa trans industrial. El aceite de oliva, los frutos secos y el pescado sustituyen a la mantequilla y a la fritura habitual.</li>
+        <li>Los días con más ejercicio el cuerpo gasta más. Se cubre con un poco más de esos mismos alimentos, no con otra dieta ni con un producto especial. Esto es una consecuencia práctica, no una dieta con nombre.</li>
+      </ul>
+      <h3>Por qué</h3>
+      <p class="why">La OMS describe un patrón, no una dieta de moda: comida variada, poco procesada, con poca sal, poco azúcar libre y poca grasa poco saludable. Ese patrón protege frente a la malnutrición y frente a diabetes, enfermedad cardiaca, ictus y algunos cánceres. <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">Ficha «Healthy diet»</a>. Los límites de grasa están resumidos en las <a href="https://www.who.int/europe/news-room/fact-sheets/item/nutrition---maintaining-a-healthy-lifestyle">recomendaciones europeas de la OMS</a>.</p>
+    </article>
+    <article id="animo">
+      <p class="num">04</p>
+      <h2>Anotar tres cosas que salieron bien</h2>
+      <h3>Qué hacer</h3>
+      <ul>
+        <li>Por la noche, durante al menos una semana, escribir tres cosas que fueron bien ese día y por qué ocurrieron. Pueden ser pequeñas.</li>
+        <li>Es un resumen anclado en hechos. No basta con imaginar que mañana será un gran día: el ejercicio que se puso a prueba pide la causa, no un deseo.</li>
+        <li>Dormir y moverse también forman parte del ánimo. El sueño corto se asocia con más depresión, y la actividad regular entra en las guías de salud por sus efectos amplios.</li>
+      </ul>
+      <h3>Por qué</h3>
+      <p class="why">En un ensayo aleatorio por internet, escribir «tres cosas buenas» y su causa aumentó la felicidad y redujo síntomas depresivos hasta seis meses, sobre todo en quien siguió haciéndolo. <a href="https://pubmed.ncbi.nlm.nih.gov/16045394/">Seligman, Steen, Park y Peterson, American Psychologist, 2005</a>. La guía de práctica está en <a href="https://ggia.berkeley.edu/practice/three-good-things">Greater Good in Action</a>.</p>
+    </article>
+  </main>
+  <footer class="wrap">
+    <h2>Fuentes</h2>
+    <ol>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4434546/">Consenso de sueño en adultos</a>, AASM y Sleep Research Society, 2015.</li>
+      <li><a href="https://bjsm.bmj.com/content/54/24/1451">Guía OMS de actividad física</a>, Bull y cols., 2020.</li>
+      <li><a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet">Alimentación saludable</a>, OMS.</li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/16045394/">Tres cosas buenas</a>, Seligman y cols., 2005.</li>
+    </ol>
+    <p class="note">Orientación general. Si el sueño, el ánimo o la comida ya son un problema, un profesional vale más que una página.</p>
+  </footer>
+</body>
+</html>
